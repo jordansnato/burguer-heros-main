@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>Faça seu cadastro</h1>
+    </header>
+
+    <main>
+        <form action="index.html" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="campos">
+                    <label for="name">Nome completo*</label>
+                    <input type="text" name="name" id="name" required placeholder="Seu nome completo" minlength="3">
+
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required placeholder="Seu melhor email">
+
+                    <label for="cpf">CPF*</label>
+                    <input type="text" name="cpf" id="cpf" required placeholder="000.000.000-00" maxlength="14"
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+
+                    <label for="telefone">Telefone*</label>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx"
+                        maxlength="15" pattern="\(\d{2}\)\d{5}-\d{4}">
+
+                    <label for="senha">Senha*</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required
+                        minlength="6">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informe seu endereço</legend>
+                <div class="campos">
+                    <label for="endereco">Endereço*</label>
+                    <input type="text" name="endereco" id="endereco" required placeholder="Seu endereço completo">
+
+                    <label for="Cep">CEP*</label>
+                    <input type="text" name="Cep" id="Cep" required placeholder="00000-000" maxlength="9"
+                        pattern="\d{5}-\d{3}">
+
+                    <label for="complemento">Complemento*</label>
+                    <input type="number" name="complemento" id="complemento" placeholder="Número da residência"
+                        required>
+
+                    <label for="tipo_residencia">Tipo de Residência*</label>
+                    <select class="selecione" name="tipo_residencia" id="tipo_residencia" required>
+                        <option value="">Selecione...</option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                    </select>
+
+                    <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required
+                        placeholder="Escreva um ponto de referência do seu endereço"></textarea>
+
+                    <button class="btn" type="submit">Cadastrar</button>
+                    <button class="btn" type="reset">
+                        <a href="index.html">Voltar</a>
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Burguer Heros 2026</p>
+    </footer>
+</body>
+
+</html>

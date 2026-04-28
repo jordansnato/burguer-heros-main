@@ -79,3 +79,96 @@ footer{
     margin-top: 250px; 
     text-align: center;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    margin: auto;
+    width: 800px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.campos label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e6abab;
+    
+}
+
+.campos input{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+
+}
+
+fieldset{
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.selecione{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.selecione option{
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+    
+}
+
+.btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.btn a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#mensagem{
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    resize: none;
+}
