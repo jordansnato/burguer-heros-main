@@ -29,7 +29,6 @@ main{
 }
 
 
-
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -80,11 +79,7 @@ footer{
     text-align: center;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* pagina de cadastro / Login */
 
 form{
     margin: auto;
@@ -165,6 +160,36 @@ legend{
     color: inherit;
 }
 
+
+.back {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+
+.back a{
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back:hover{
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.back a:hover{
+    color: #fff;
+}
+
+
 #mensagem{
     width: 400px;
     padding: 10px;
@@ -185,5 +210,33 @@ legend{
 table{
     margin-left: auto;
     margin-right: 20px;
-     position: fixed;
+    position: fixed;
 }
+
+table tr:hover{
+    cursor: pointer;
+    background: lightgrey;
+}
+
+
+
+input[type="checkbox"] {
+    width: 20px !important; 
+    height: 20px !important;
+    cursor: pointer;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #90fa05;
+    box-shadow: 0 0 0 3px rgba(33, 68, 4, 0.555);
+  }

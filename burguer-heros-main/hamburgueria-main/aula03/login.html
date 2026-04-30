@@ -16,33 +16,33 @@
     <main>
 
         <table class="tb">
-                    <thead>
-                        <tr>
-                            <th scope="col">Dia</th>
-                            <th scope="col">Horário</th>
-                        </tr>
-                    </thead>
+            <thead>
+                <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Horário</th>
+                </tr>
+            </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Seg-Qua</td>
-                            <td>8:00-18:00</td>
-                        </tr>
-                        <tr>
-                            <td>Qui-Sex</td>
-                            <td>14:00-01:00</td>
-                        </tr>
-                        <tr>
-                            <td>Sabádo</td>
-                            <td>14:00-01:00</td>
-                        </tr>
-                    </tbody>    
-                        <tfoot>
-                            <tr>
-                              <td colspan="2">Domingo: fechado</td>
-                            </tr>
-                        </tfoot>
-                    
+            <tbody>
+                <tr>
+                    <td>Seg-Qua</td>
+                    <td>8:00-18:00</td>
+                </tr>
+                <tr>
+                    <td>Qui-Sex</td>
+                    <td>14:00-01:00</td>
+                </tr>
+                <tr>
+                    <td>Sabádo</td>
+                    <td>14:00-01:00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Domingo: fechado</td>
+                </tr>
+            </tfoot>
+
 
         </table>
 
@@ -91,11 +91,24 @@
                         <option value="apartamento">Apartamento</option>
                     </select>
 
-                    <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required
+                    <textarea id="mensagem" name="mensagem" rows="5" minlength="15" required
                         placeholder="Escreva um ponto de referência do seu endereço"></textarea>
 
-                    <button class="btn" type="submit">Cadastrar</button>
-                    <button class="btn" type="reset">Limpar formulário</button>
+                    <div>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos" class="check">
+                            Aceito os
+                            <a href="termos.html">termos de uso</a>
+                        </label>
+                    </div>
+
+                    <div>
+                        <button class="btn" type="submit">Cadastrar</button>
+                        <button class="btn" type="reset">Limpar formulário</button>
+                    </div>
+                    <div class="back">
+                        <a href="index.html">Voltar</a>
+                    </div>
                 </div>
             </fieldset>
         </form>
