@@ -172,3 +172,18 @@ legend{
     background: rgba(255, 255, 255, 0.8);
     resize: none;
 }
+
+.tb{
+    color: aliceblue;
+    font-size: 1.2rem;
+    border: 1px solid aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+
+table{
+    margin-left: auto;
+    margin-right: 20px;
+     position: fixed;
+}

@@ -14,6 +14,38 @@
     </header>
 
     <main>
+
+        <table class="tb">
+                    <thead>
+                        <tr>
+                            <th scope="col">Dia</th>
+                            <th scope="col">Horário</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Seg-Qua</td>
+                            <td>8:00-18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Qui-Sex</td>
+                            <td>14:00-01:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabádo</td>
+                            <td>14:00-01:00</td>
+                        </tr>
+                    </tbody>    
+                        <tfoot>
+                            <tr>
+                              <td colspan="2">Domingo: fechado</td>
+                            </tr>
+                        </tfoot>
+                    
+
+        </table>
+
         <form action="index.html" method="get">
             <fieldset>
                 <legend>Dados pessoais</legend>
@@ -63,9 +95,7 @@
                         placeholder="Escreva um ponto de referência do seu endereço"></textarea>
 
                     <button class="btn" type="submit">Cadastrar</button>
-                    <button class="btn" type="reset">
-                        <a href="index.html">Voltar</a>
-                    </button>
+                    <button class="btn" type="reset">Limpar formulário</button>
                 </div>
             </fieldset>
         </form>
